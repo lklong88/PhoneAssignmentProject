@@ -1,1 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>@ViewData["Title"] · Assignment Hub</title><link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /></head><body><div class="app"><aside class="sidebar"><div class="brand"><div class="brand-icon">✦</div><div><strong>Assignment Hub</strong><small>Team Operations</small></div></div><div class="side-label">WORKSPACE</div><a class="nav active" asp-controller="Home" asp-action="Index"><span>▦</span> Phone assignments</a><div class="sidebar-bottom"><span class="online"></span> Demo workspace</div></aside><main class="main"><header class="topbar"><span>Workspace <span class="slash">/</span> Phone assignments</span><span class="avatar">AD</span></header><div class="content">@RenderBody()</div></main></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · Assignment Hub</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <div>
+                    <strong>Assignment Hub</strong>
+                    <small>Team Operations</small>
+                </div>
+            </div>
+
+            <div class="side-label">WORKSPACE</div>
+
+            <a class="nav active" asp-controller="Home" asp-action="Index">
+                <span>▦</span> Phone assignments
+            </a>
+
+            <div class="sidebar-bottom">
+                <span class="online"></span>
+                Demo workspace
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <span>
+                    Workspace <span class="slash">/</span> Phone assignments
+                </span>
+                <span class="avatar">AD</span>
+            </header>
+
+            <div class="content">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+</body>
+</html>
